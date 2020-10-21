@@ -1,6 +1,6 @@
 package A9.Math1;
 
-public class Math {
+public class Math11 {
 
 	public static void main(String[] args) {
 		int input = 822;
