@@ -1,10 +1,8 @@
 package A9.Math1;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
 public class A2869 {
 	static void howManyDays(int[] intArr) {
@@ -12,19 +10,19 @@ public class A2869 {
 		int meter = 0;
 		
 		while (intArr[0] < intArr[2]) {
-			day++;
-			meter = intArr[0] * day;
+			meter = meter + intArr[0];
+			
 			if (meter > intArr[2]) {
 				break;
 			}
 			meter = meter - intArr[1];
+			day++;
 		}
 		System.out.println(day);
 	}
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		String msg = br.readLine();
 		String[] strArr = msg.split(" ");
 		int[] intArr = new int[strArr.length];
