@@ -13,13 +13,13 @@ public class A2869 {
 		
 		while (intArr[0] < intArr[2]) {
 			day++;
-			System.out.println(day);
 			meter = intArr[0] * day;
-			if (intArr[0] < intArr[2]) {
+			if (meter > intArr[2]) {
 				break;
 			}
 			meter = meter - intArr[1];
 		}
+		System.out.println(day);
 	}
 
 	public static void main(String[] args) throws IOException {
