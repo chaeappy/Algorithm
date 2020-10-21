@@ -8,13 +8,18 @@ public class A2447 {
 		Scanner sc = new Scanner(System.in);
 		
 		int input = sc.nextInt();
-		
 		for (int i = 0; i < input; i++) {
 			System.out.print("***");
-			for (int c = 0; c < input; c++) {
-			}
 		}
+		System.out.println();
 		
+		for (int i = 0; i < input; i++) {
+			System.out.print("* *");
+		}
+		System.out.println();
+		for (int i = 0; i < input; i++) {
+			System.out.print("***");	
+		}
 	}
 
 }

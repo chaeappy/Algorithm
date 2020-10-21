@@ -11,7 +11,7 @@ public class A10872 {
 	}
 	
 	static int loop(int number) {
-		if (number == 1 || number == 0) {
+		if (number == 1) {
 			return 1;
 		} else {
 			return number * loop(--number);
