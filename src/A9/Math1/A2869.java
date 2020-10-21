@@ -10,18 +10,12 @@ public class A2869 {
 	static void howManyDays(int[] intArr) throws IOException {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int day = 0;
-		int meter = 0;
 		
-		while (meter < intArr[2]) {
+		while (intArr[0] + ((intArr[0] - intArr[1]) * day) < intArr[2]) {
 			day++;
-			meter = meter + intArr[0];
-			
-			if (meter >= intArr[2]) {
-				break;
-			}
-			meter = meter - intArr[1];
 		}
-		bw.write(day + "");
+		
+		bw.write((day + 1) + "");
 		bw.flush();
 		bw.close();
 	}
@@ -40,3 +34,5 @@ public class A2869 {
 	}
 
 }
+
+
