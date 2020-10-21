@@ -7,6 +7,16 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class A2869 {
+	static int tired (double[] doubleArr) {
+		double day = 0;
+		if ((doubleArr[2] - doubleArr[0]) % (doubleArr[0] - doubleArr[1]) != 0) {
+			day = ((doubleArr[2] - doubleArr[0]) / (doubleArr[0] - doubleArr[1])) + 2;
+			
+		} else {
+			day = ((doubleArr[2] - doubleArr[0]) / (doubleArr[0] - doubleArr[1])) + 1;
+		}
+		return (int) day;
+	}
 		
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,8 +28,8 @@ public class A2869 {
 			doubleArr[i] = Integer.parseInt(strArr[i]);
 		}
 		
-		double day = ((doubleArr[2] - doubleArr[0]) / (doubleArr[0] - doubleArr[1])) + 1;
-		int dday = (int) Math.ceil(day);
+		
+		int dday = tired(doubleArr);
 		bw.write(dday + "");
 		bw.flush();
 		bw.close();
@@ -28,5 +38,3 @@ public class A2869 {
 	}
 
 }
-
-
