@@ -8,12 +8,8 @@ import java.io.OutputStreamWriter;
 
 public class A2869 {
 	static double calculateCeil(double day) {
-		if (day % (int) day == 0) {
+		day = ((day - ((int) day)) == 0) ? day : (int) day + 1;
 			return day;
-		} else {
-			day = (int) day + 1;
-			return day;
-		}
 	}
 	
       
@@ -37,4 +33,3 @@ public class A2869 {
 	}
 
 }
-
