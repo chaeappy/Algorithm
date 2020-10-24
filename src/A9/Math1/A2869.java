@@ -8,6 +8,7 @@ import java.io.OutputStreamWriter;
 
 public class A2869 {
 	static double calculateCeil(double day) {
+		// % 대신 - 사용하여 연산 부하를 줄
 		day = ((day - ((int) day)) == 0) ? day : (int) day + 1;
 			return day;
 	}
