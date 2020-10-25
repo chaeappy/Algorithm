@@ -1,4 +1,4 @@
-package A9.Math1;
+package A9.Math1.분수찾기_피라미드;
 
 import java.io.BufferedReader;
 import java.io.IOException;
